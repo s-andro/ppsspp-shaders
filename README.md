@@ -3,9 +3,9 @@
 PPSSPP [1.9.3-859以降](https://buildbot.orphis.net/ppsspp/)
 
 ### インストール
-iniとfshファイルを`(PPSSPPのインストール先)\assets\shaders`にコピー
+このリポジトリごとダウンロードしてiniとfshファイルを`(PPSSPPのインストール先)\assets\shaders`にコピー
 
-### Ainme4K + CASの推奨設定
+## Ainme4K + CASの推奨設定
 PPSSPPの設定
 
     レンダリング解像度         = 自動 (画像の境界線が見える場合1x)
@@ -23,6 +23,6 @@ PPSSPPの設定
 ウィンドウサイズを大きくしたい場合`Push Strength`を大きくする  
 しかし`2x`での使用が最も無難
 
-### 参考
+## 参考
 [Anime4K](https://github.com/bloc97/Anime4K)  
 [FidelityFX CAS](https://github.com/GPUOpen-Effects/FidelityFX-CAS)
