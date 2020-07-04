@@ -1,27 +1,29 @@
-# postprocessing shaders for PPSSPP
+# post-processing shaders for PPSSPP
 ### 必要なもの
 PPSSPP [1.9.3-859以降](https://buildbot.orphis.net/ppsspp/)
 
 ### インストール
-このリポジトリごとダウンロードしてiniとfshファイルを`(PPSSPPのインストール先)\assets\shaders`にコピー
+まるごと[ダウンロード](https://github.com/s-andro/ppsspp-shaders/archive/master.zip)してREADME以外のファイルを`assets\shaders`にコピー
 
-## Ainme4K + CASの推奨設定
+### 推奨設定
 PPSSPPの設定
 
     レンダリング解像度         = 自動 (画像の境界線が見える場合1x)
     ウィンドウサイズ           = 2x
-    テクスチャフィルタリング   = Linear
-    画像スケーリングのフィルタ = Linear
     テクスチャスケーリング     = オフ
 
-シェーダーの設定
+CGメインの場合  
+自動またはLinearフィルタ + Ainme4K + CAS
 
-    Push Strength      = 0.3
-    Push Grad Strength = 0.5 (大きいほど平面感が増す)
-    Sharpness          = 1.0 (ぼやけない程度まで下げても良い)
+ドット絵を崩したくない場合  
+Nearestフィルタ + Soft Edge + Ainme4K + CAS
 
-ウィンドウサイズを大きくしたい場合`Push Strength`を大きくする  
-しかし`2x`での使用が最も無難
+### Anime4Kの設定
+    Push Strength      → 大きいほど境界線が薄くなる
+    Push Grad Strength → 大きいほど平面感が増す
+
+### Soft Edgeの設定
+    Edge Peak → 大きいほど縁の弱い部分をぼかしにくくなる。0で全体的にぼかす
 
 ## 参考
 [Anime4K](https://github.com/bloc97/Anime4K)  
