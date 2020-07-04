@@ -4,7 +4,7 @@ precision mediump int;
 #endif
 
 uniform sampler2D sampler0;
-uniform vec2 u_texelDelta;
+uniform vec2 u_pixelDelta;
 uniform vec4 u_setting;
 
 varying vec2 v_texcoord0;
@@ -23,8 +23,8 @@ vec4 getLargest(vec4 cc, vec4 lightest, vec4 a, vec4 b, vec4 c) {
 }
 
 void main() {
-  float dx = u_texelDelta.x;
-  float dy = u_texelDelta.y;
+  float dx = u_pixelDelta.x;
+  float dy = u_pixelDelta.y;
 
   vec4 tl = texture2D(sampler0, v_texcoord0 + vec2(-dx, -dy));
   vec4 tc = texture2D(sampler0, v_texcoord0 + vec2(0.0, -dy));
