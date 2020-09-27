@@ -3,7 +3,10 @@
 PPSSPP [1.9.3-859以降](https://buildbot.orphis.net/ppsspp/)
 
 ### インストール
-まるごと[ダウンロード](https://github.com/s-andro/ppsspp-shaders/archive/master.zip)してREADME以外のファイルを`assets\shaders`にコピー
+まるごと[ダウンロード](https://github.com/s-andro/ppsspp-shaders/archive/master.zip)してREADME以外のファイルを`assets\shaders`にコピー  
+
+`1.10.3-741`から設定画面で複数のシェーダーを設定できるようになったので  
+`anime4k-cas.ini`と`soft-anime4k-cas.ini`は必要なくなった
 
 ### 推奨設定
 PPSSPPの設定
